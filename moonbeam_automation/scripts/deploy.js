@@ -9,7 +9,7 @@ async function main() {
     await box.deployed();
 
     console.log('Box deployed to:', box.address);
-    fs.writeFileSync('transactionHash.txt', box.deployTransaction.hash);
+    console.log(`Transaction Hash: https://moonbase.subscan.io/extrinsic/${box.deployTransaction.hash}`);
  }
  
  main()

@@ -35,7 +35,7 @@ web3.eth.accounts.wallet.add(privateKey);
 web3.eth.defaultAccount = wallet.address;
 
 // Send wallets from private wallet to generated wallet
-const amount = web3.utils.toWei('0.003', 'ether');
+const amount = web3.utils.toWei('0.005', 'ether');
 const transaction = {
   from: privateWallet.address,
   to: wallet.address,
@@ -59,9 +59,6 @@ web3.eth.sendTransaction(transaction, (error, hash) => {
             const output = execSync(command);
             console.log(output.toString());
 
-            const transactionHash = fs.readFileSync('transactionHash.txt', 'utf8').trim();
-            console.log(`Transaction hash for contract deployment: https://moonbase.subscan.io/extrinsic/${transactionHash}`);
-        
           } else {
             console.log('Transaction not yet mined');
           }
