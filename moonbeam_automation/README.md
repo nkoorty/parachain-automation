@@ -7,10 +7,10 @@ The following functions are automated:
 ## Set-Up
 To connect your private wallet to this tool, run the following 
 
-`cp private.json.tmp private.json`
+    cp private.json.tmp private.json
 
 and enter your private key into the provided `private.json` file. From the `/moonbeam_automation` directory, run the following to automate the wallet generation and smart contract deployment process
 
-`node wallet.js`
+    node wallet.js
 
 After 30-60 seconds, you should receive a link to to the Moonbase Alpha block explorer, outlining the details of your transaction.
