@@ -35,7 +35,7 @@ web3.eth.accounts.wallet.add(privateKey);
 web3.eth.defaultAccount = wallet.address;
 
 // Send wallets from private wallet to generated wallet
-const amount = web3.utils.toWei('0.005', 'ether');
+const amount = web3.utils.toWei('0.01', 'ether');
 const transaction = {
   from: privateWallet.address,
   to: wallet.address,
