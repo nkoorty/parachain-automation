@@ -1,7 +1,0 @@
-await box.store(5)
-const box = await Box.attach('0x425668350bD782D80D457d5F9bc7782A24B8c2ef');
-const Box = await ethers.getContractFactory('Box');
-(await box.retrieve()).toNumber()
-await box.store(5)
-const box = await Box.attach('0x425668350bD782D80D457d5F9bc7782A24B8c2ef');
-const Box = await ethers.getContractFactory('Box');
