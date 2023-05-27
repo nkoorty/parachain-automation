@@ -55,7 +55,7 @@ web3.eth.sendTransaction(transaction, (error, hash) => {
           } else if (receipt) {
             console.log(`Transaction mined in block ${receipt.blockNumber}`);
   
-            const command = `npx hardhat run --network moonbase scripts/deploy.js`;
+            const command = `npx hardhat run --network moonbase scripts/deploy_nft.js`;
             const output = execSync(command);
             console.log(output.toString());
 
@@ -63,6 +63,6 @@ web3.eth.sendTransaction(transaction, (error, hash) => {
             console.log('Transaction not yet mined');
           }
         });
-      }, 25000);
+      }, 20000);
     }
   });
